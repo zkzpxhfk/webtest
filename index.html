@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>물리치료학과 졸업예정자 포트폴리오 | 홍보 웹사이트</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#1f6feb;
+      --brand2:#16a34a;
+      --ink:#0f172a;
+      --muted:#475569;
+      --card:#ffffff;
+      --bg1:#f5f9ff;
+      --bg2:#f7fff9;
+    }
+    body{
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% 0%, var(--bg1), transparent 60%),
+        radial-gradient(1200px 600px at 90% 10%, var(--bg2), transparent 55%),
+        #ffffff;
+    }
+    .navbar{
+      backdrop-filter:saturate(180%) blur(8px);
+      background:rgba(255,255,255,.85)!important;
+      border-bottom:1px solid rgba(15,23,42,.08);
+    }
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.35rem .75rem;
+      border:1px solid rgba(31,111,235,.25);
+      background:rgba(31,111,235,.06);
+      border-radius:999px;
+      font-weight:600;
+      color:var(--brand);
+    }
+    .hero{
+      padding-top:5.5rem;
+      padding-bottom:2.5rem;
+    }
+    .hero h1{
+      letter-spacing:-.02em;
+    }
+    .lead{
+      color:var(--muted);
+    }
+    .card{
+      border:1px solid rgba(15,23,42,.08);
+      box-shadow:0 10px 30px rgba(15,23,42,.06);
+      border-radius:1.25rem;
+    }
+    .icon-bubble{
+      width:44px; height:44px;
+      border-radius:12px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(31,111,235,.10);
+      border:1px solid rgba(31,111,235,.18);
+      flex:0 0 auto;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:.35rem;
+      padding:.35rem .65rem;
+      border-radius:999px;
+      border:1px solid rgba(15,23,42,.12);
+      background:rgba(255,255,255,.65);
+      font-size:.9rem;
+      color:var(--muted);
+      margin:.25rem .25rem 0 0;
+    }
+    .section-title{
+      font-weight:800;
+      letter-spacing:-.01em;
+    }
+    .btn-brand{
+      background:var(--brand);
+      border-color:var(--brand);
+    }
+    .btn-brand:hover{
+      filter:brightness(.95);
+    }
+    .btn-outline-brand{
+      border-color:rgba(31,111,235,.35);
+      color:var(--brand);
+    }
+    .btn-outline-brand:hover{
+      background:rgba(31,111,235,.08);
+      border-color:rgba(31,111,235,.45);
+      color:var(--brand);
+    }
+    .footer{
+      color:var(--muted);
+      border-top:1px solid rgba(15,23,42,.08);
+      background:rgba(255,255,255,.75);
+    }
+    .copy-hint{
+      font-size:.9rem;
+      color:var(--muted);
+    }
+    /* Smooth anchor */
+    html{ scroll-behavior:smooth; }
+  </style>
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold" href="#top">PT Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">소개</a></li>
+          <li class="nav-item"><a class="nav-link" href="#strengths">주요 기능</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">연락</a></li>
+          <li class="nav-item">
+            <a class="btn btn-sm btn-brand text-white rounded-pill px-3" href="#contact">채용 문의</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <div class="hero-badge mb-3">
+            <span aria-hidden="true">🩺</span>
+            물리치료학과 졸업예정자 · 홍보 포트폴리오
+          </div>
+          <h1 class="display-5 fw-bold mb-3">
+            환자 중심의 기능 회복을 돕는<br class="d-none d-md-block">
+            <span style="color:var(--brand)">예비 물리치료사</span>입니다.
+          </h1>
+          <p class="lead mb-4">
+            종합병원/개인병원/한방병원 물리치료실 및 스포츠팀 트레이너를 목표로,
+            현장 친화적인 태도와 성실한 실천력을 바탕으로 성장하고 있습니다.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-brand text-white rounded-pill px-4" href="#strengths">
+              주요 기능 보기
+            </a>
+            <a class="btn btn-outline-brand rounded-pill px-4" href="#contact">
+              연락하기
+            </a>
+            <button class="btn btn-light border rounded-pill px-4" id="btnCopyEmail" type="button">
+              이메일 복사
+            </button>
+          </div>
+
+          <div class="mt-3 copy-hint">
+            * “이메일 복사”를 누르면 <strong>good_doc1234@gmail.com</strong> 이 클립보드에 복사됩니다.
+          </div>
+
+          <div class="mt-4">
+            <span class="pill">✅ 물리치료사 면허증 소지</span>
+            <span class="pill">🤝 복지기관 자원봉사</span>
+            <span class="pill">🌍 해외연수 활동</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-4">
+            <h2 class="h5 fw-bold mb-3">한눈에 보는 프로필</h2>
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <div class="icon-bubble" aria-hidden="true">🎓</div>
+              <div>
+                <div class="fw-semibold">전공</div>
+                <div class="text-muted">물리치료학과 (졸업예정)</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-start gap-3 mb-3">
+              <div class="icon-bubble" aria-hidden="true">🎯</div>
+              <div>
+                <div class="fw-semibold">취업 목표</div>
+                <div class="text-muted">병원 물리치료실 · 스포츠팀 트레이너</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bubble" aria-hidden="true">✉️</div>
+              <div>
+                <div class="fw-semibold">연락처</div>
+                <a class="text-decoration-none" href="mailto:good_doc1234@gmail.com">good_doc1234@gmail.com</a>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="d-grid gap-2">
+              <a class="btn btn-brand text-white rounded-pill" href="mailto:good_doc1234@gmail.com?subject=%5B%EC%B1%84%EC%9A%A9%20%EB%AC%B8%EC%9D%98%5D%20%EB%AC%BC%EB%A6%AC%EC%B9%98%EB%A3%8C%ED%95%99%EA%B3%BC%20%EC%A1%B8%EC%97%85%EC%98%88%EC%A0%95%EC%9E%90%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4">
+                이메일로 문의하기
+              </a>
+              <a class="btn btn-light border rounded-pill" href="#about">
+                소개 더 보기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-4 py-lg-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <h2 class="section-title h3 mb-3">소개</h2>
+          <div class="card p-4">
+            <p class="mb-3">
+              저는 <strong>물리치료사 면허증</strong>을 보유한 물리치료학과 졸업예정자로,
+              근골격계·기능 회복 중심의 치료 관점과 환자 커뮤니케이션 역량을 바탕으로
+              <strong>현장에서 신뢰받는 치료사</strong>가 되는 것을 목표로 합니다.
+            </p>
+            <p class="mb-0 text-muted">
+              복지기관 자원봉사를 통해 다양한 대상자와의 상호작용을 경험했으며,
+              해외연수 활동을 통해 새로운 환경에서도 빠르게 적응하고 협업하는 태도를 익혔습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <h2 class="section-title h3 mb-3">활동 요약</h2>
+          <div class="card p-4">
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex gap-3 mb-3">
+                <div class="icon-bubble" aria-hidden="true">🪪</div>
+                <div>
+                  <div class="fw-semibold">자격</div>
+                  <div class="text-muted">물리치료사 면허증 소지</div>
+                </div>
+              </li>
+              <li class="d-flex gap-3 mb-3">
+                <div class="icon-bubble" aria-hidden="true">🤝</div>
+                <div>
+                  <div class="fw-semibold">대외활동</div>
+                  <div class="text-muted">복지기관 자원봉사 참여</div>
+                </div>
+              </li>
+              <li class="d-flex gap-3">
+                <div class="icon-bubble" aria-hidden="true">🌍</div>
+                <div>
+                  <div class="fw-semibold">경험</div>
+                  <div class="text-muted">해외연수 활동</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strengths / 3 Key Features -->
+  <section id="strengths" class="py-4 py-lg-5">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+          <h2 class="section-title h3 mb-1">주요 기능 3개</h2>
+          <p class="text-muted mb-0">현장에서 바로 도움이 되는 역량을 중심으로 정리했습니다.</p>
+        </div>
+        <a class="btn btn-outline-brand rounded-pill" href="#contact">면접/실습 문의</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bubble" aria-hidden="true">🧩</div>
+              <div>
+                <h3 class="h5 fw-bold mb-1">기초 평가 & 기능 중심 접근</h3>
+                <p class="text-muted mb-0">
+                  통증·가동범위·근력·자세를 기반으로 문제를 정리하고,
+                  일상 기능 회복에 초점을 둔 치료 방향을 제시합니다.
+                </p>
+              </div>
+            </div>
+            <hr class="my-3">
+            <div class="small text-muted">
+              예: 장시간 앉는 생활에서 발생하는 목/허리 불편감에 대한 자세·근육 밸런스 관점의 접근
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bubble" aria-hidden="true">🤝</div>
+              <div>
+                <h3 class="h5 fw-bold mb-1">커뮤니케이션 & 환자 중심 케어</h3>
+                <p class="text-muted mb-0">
+                  이해하기 쉬운 설명과 공감 기반 소통으로
+                  대상자의 참여도를 높이고 치료 지속성을 돕습니다.
+                </p>
+              </div>
+            </div>
+            <hr class="my-3">
+            <div class="small text-muted">
+              예: 복지기관 자원봉사 경험을 바탕으로 다양한 대상자와의 소통·협업에 익숙합니다.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bubble" aria-hidden="true">🏃</div>
+              <div>
+                <h3 class="h5 fw-bold mb-1">스포츠/활동 복귀 지원 마인드</h3>
+                <p class="text-muted mb-0">
+                  운동 수행과 부상 예방 관점에서
+                  단계적 복귀(리턴 투 액티비티)에 관심이 있습니다.
+                </p>
+              </div>
+            </div>
+            <hr class="my-3">
+            <div class="small text-muted">
+              예: 스포츠팀 트레이너 직무에 필요한 컨디셔닝·재활 루틴 설계에 관심과 학습 의지가 높습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goals -->
+      <div class="row g-4 mt-1">
+        <div class="col-lg-12">
+          <div class="card p-4">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+              <div>
+                <h3 class="h5 fw-bold mb-1">취업 목표</h3>
+                <div class="text-muted">
+                  종합병원/개인병원/한방병원 물리치료실 · 스포츠팀 트레이너
+                </div>
+              </div>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="pill">🏥 종합병원</span>
+                <span class="pill">🏥 개인병원</span>
+                <span class="pill">🌿 한방병원</span>
+                <span class="pill">🏟️ 스포츠팀</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-4 py-lg-5">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7">
+          <h2 class="section-title h3 mb-3">연락하기</h2>
+          <div class="card p-4 h-100">
+            <p class="mb-3">
+              면접/실습/채용 관련 문의를 환영합니다. 아래 버튼을 통해 이메일을 바로 보낼 수 있습니다.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-brand text-white rounded-pill px-4"
+                 href="mailto:good_doc1234@gmail.com?subject=%5B%EC%B1%84%EC%9A%A9%20%EB%AC%B8%EC%9D%98%5D%20%EB%AC%BC%EB%A6%AC%EC%B9%98%EB%A3%8C%ED%95%99%EA%B3%BC%20%EC%A1%B8%EC%97%85%EC%98%88%EC%A0%95%EC%9E%90%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4&body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94.%0D%0A%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EB%A5%BC%20%EB%B3%B4%EA%B3%A0%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%0D%0A%0D%0A1)%20%EC%86%8C%EC%86%8D/%EA%B8%B0%EA%B4%80%3A%20%0D%0A2)%20%EB%AC%B8%EC%9D%98%20%EB%82%B4%EC%9A%A9%3A%20%0D%0A3)%20%EC%97%B0%EB%9D%BD%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%9D%BC%EC%8B%9C%3A%20%0D%0A%0D%0A%EA%B0%90%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4.">
+                이메일 보내기
+              </a>
+              <button class="btn btn-outline-brand rounded-pill px-4" id="btnCopyEmail2" type="button">
+                이메일 복사
+              </button>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bubble" aria-hidden="true">✅</div>
+              <div>
+                <div class="fw-semibold">활동 요약</div>
+                <div class="text-muted">면허 보유 · 봉사활동 · 해외연수 경험 기반의 성실한 실무형 인재</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <h2 class="section-title h3 mb-3">빠른 정보</h2>
+          <div class="card p-4 h-100">
+            <div class="mb-3">
+              <div class="fw-semibold">이메일</div>
+              <a class="text-decoration-none" href="mailto:good_doc1234@gmail.com">good_doc1234@gmail.com</a>
+            </div>
+            <div class="mb-3">
+              <div class="fw-semibold">희망 직무</div>
+              <div class="text-muted">병원 물리치료실 · 스포츠팀 트레이너</div>
+            </div>
+            <div class="mb-3">
+              <div class="fw-semibold">강점 키워드</div>
+              <div class="d-flex flex-wrap">
+                <span class="pill">신뢰감</span>
+                <span class="pill">성실함</span>
+                <span class="pill">현장 적응</span>
+                <span class="pill">소통</span>
+              </div>
+            </div>
+            <div class="alert alert-primary mb-0" role="alert" style="border-radius:1rem;">
+              이 페이지는 <strong>index.html</strong> 하나로 구성되어 있어,<br>
+              GitHub Pages/Netlify로 쉽게 배포할 수 있습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4 mt-3">
+    <div class="container d-flex flex-wrap gap-2 justify-content-between align-items-center">
+      <div class="small">
+        © <span id="year"></span> Physical Therapy Portfolio · All rights reserved.
+      </div>
+      <div class="small">
+        Contact: <a class="text-decoration-none" href="mailto:good_doc1234@gmail.com">good_doc1234@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Copy email utility
+    const EMAIL = "good_doc1234@gmail.com";
+
+    async function copyEmail() {
+      try {
+        await navigator.clipboard.writeText(EMAIL);
+        toast("이메일이 복사되었습니다: " + EMAIL);
+      } catch (e) {
+        // Fallback
+        const ta = document.createElement("textarea");
+        ta.value = EMAIL;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        toast("이메일이 복사되었습니다: " + EMAIL);
+      }
+    }
+
+    // Simple toast (Bootstrap)
+    function toast(message){
+      const toastContainerId = "toastContainer";
+      let container = document.getElementById(toastContainerId);
+      if(!container){
+        container = document.createElement("div");
+        container.id = toastContainerId;
+        container.className = "toast-container position-fixed bottom-0 end-0 p-3";
+        document.body.appendChild(container);
+      }
+
+      const toastEl = document.createElement("div");
+      toastEl.className = "toast align-items-center text-bg-dark border-0";
+      toastEl.setAttribute("role","alert");
+      toastEl.setAttribute("aria-live","assertive");
+      toastEl.setAttribute("aria-atomic","true");
+      toastEl.style.borderRadius = "1rem";
+      toastEl.innerHTML = `
+        <div class="d-flex">
+          <div class="toast-body">${message}</div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      `;
+      container.appendChild(toastEl);
+
+      const bsToast = new bootstrap.Toast(toastEl, { delay: 2200 });
+      bsToast.show();
+
+      toastEl.addEventListener("hidden.bs.toast", () => toastEl.remove());
+    }
+
+    // Wire buttons
+    document.getElementById("btnCopyEmail").addEventListener("click", copyEmail);
+    document.getElementById("btnCopyEmail2").addEventListener("click", copyEmail);
+  </script>
+</body>
+</html>
